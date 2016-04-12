@@ -1,0 +1,25 @@
+{
+	"id": "RPSlist.7.0.1",
+	"target":{
+		"subjects":{
+			"subject":{
+				"role":"admin"
+			}
+		},
+		"resources":{
+			"resource":{
+				"ispending":"false"
+			}
+		},
+		"actions":{
+			"action":{
+				"actiontype":"write"
+			}
+		}
+	},
+	"rule":{
+		"id": "RPSlist.7.0.1.r.1",
+		"effect":"permit"
+	}
+}
+

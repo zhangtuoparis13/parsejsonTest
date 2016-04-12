@@ -7,7 +7,7 @@
 
 'use strict';
 
-// Define JSON File
+/*// Define JSON File
  var fs = require("fs");
  console.log("\n *STARTING* \n");
 // Get content from file
@@ -18,4 +18,20 @@
  console.log("User Name:", jsonContent.username);
  console.log("Email:", jsonContent.email);
  console.log("Password:", jsonContent.password);
- console.log("\n *EXIT* \n");
+ console.log("\n *EXIT* \n");*/
+
+
+// Define JSON File
+var fs = require("fs");
+console.log("\n *STARTING* \n");
+// Get content from file
+var contents = fs.readFileSync("policy.json");
+// Define to JSON type
+var jsonContent = JSON.parse(contents);
+// Get Value from JSON
+console.log("Who?:", jsonContent.target.subjects.subject.role);
+console.log("Attach the resource?:", jsonContent.target.resources.resource.ispending);
+console.log("Do what?:", jsonContent.target.actions.action.actiontype);
+console.log("Rules effect? :", jsonContent.rule.effect);
+console.log("\n *EXIT* \n");
+
