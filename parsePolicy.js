@@ -10,7 +10,7 @@
 var fs = require("fs");
 console.log("\n *STARTING* \n");
 // Get content from file
-var contents = fs.readFile('policy.json','utf-8', function(err, contents) {
+fs.readFile('policy.json','utf-8', function(err, contents) {
 	// Define to JSON type
 	var jsonContent = JSON.parse(contents);
 	if (err) {
@@ -24,4 +24,4 @@ var contents = fs.readFile('policy.json','utf-8', function(err, contents) {
 		console.log("\n *EXIT* \n");
 		}
 });
-    console.log('Because this is a non-Bloking way.');
+console.log('Because this is a non-Blocking way.');
